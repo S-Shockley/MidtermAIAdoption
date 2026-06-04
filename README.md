@@ -1,8 +1,22 @@
 # Global AI Adoption & Workforce Impact Analysis
- ##Project Overview
+
+![AI Adoption Banner](images/AIbanner.webp)
+
+## Project Overview
 Aritificial Intelligence is changing how organizations function and impacting their business operations from top to bottom. This study analyzes global AI adoption and observes the relationship between adoption rate, investment, growth, and workforce effects. 
 
 Using the Global AI Adoption & Workforce Impact Dataset from Kaggle, this project applies SQL analysis, Python data processing, and data visualization techniques to identify trends across companies, industries, and countries.
+
+# Table of Contents
+1. [Dataset Description](#dataset-description)
+2. [Project Objectives](#project-objectives)
+3. [Tools and Technologies](#tools-and-technologies)
+4. [Analysis Plan](#analysis-plan)
+5. [Data Preparation](#data-preparation)
+6. [Exploratory Data Analysis](#exploratory-data-analysis)
+7. [Visualization Goal](#visualization-goals)
+
+
 
 ## Dataset Description
 
