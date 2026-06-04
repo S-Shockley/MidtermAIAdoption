@@ -3,7 +3,7 @@
 <p align="center">
   <img src="images/AIbanner.webp" width="900">
 </p>
-![AI Adoption Banner](images/AIbanner.webp)
+![AI Adoption Banner](Images/AIbanner.webp)
 
 ## Project Overview
 
