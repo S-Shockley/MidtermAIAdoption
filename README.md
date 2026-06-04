@@ -3,13 +3,20 @@
 ![AI Adoption Banner](images/AIbanner.webp)
 
 ## Project Overview
-Aritificial Intelligence is changing how organizations function and impacting their business operations from top to bottom. This study analyzes global AI adoption and observes the relationship between adoption rate, investment, growth, and workforce effects. 
 
-Using the Global AI Adoption & Workforce Impact Dataset from Kaggle, this project applies SQL analysis, Python data processing, and data visualization techniques to identify trends across companies, industries, and countries.
+Organizations are rapidly adopting Artificial Intelligence (AI) tools, but successful implementation requires understanding more than adoption. Organizations must consider productivity improvements, workforce impacts, governance, and many factors that influence successful integration.
 
-# Table of Contents
+Using the Global AI Adoption & Workforce Impact Dataset from Kaggle, this project explores relationships between AI maturity, investment, automation, workforce changes, and organizational outcomes using Python-based data analysis and visualization techniques.
+
+## Motivation
+
+In my current role as an Operations Research Analyst supporting digital transformation efforts, I help evaluate opportunities for automation and improved data use across organizational processes. This study allowed me to explore similar questions at a broader scale using a public dataset.
+
+This dataset does not represent my workplace, but many of the themes reflect common digital transformation challenges: identifying valuable automation opportunities, measuring effectiveness, managing adoption risk, and understanding workforce impacts.
+
+## Table of Contents
 1. [Dataset Description](#dataset-description)
-2. [Project Objectives](#project-objectives)
+2. [Questions Explored](#questions-explored)
 3. [Tools and Technologies](#tools-and-technologies)
 4. [Analysis Plan](#analysis-plan)
 5. [Data Preparation](#data-preparation)
@@ -20,7 +27,7 @@ Using the Global AI Adoption & Workforce Impact Dataset from Kaggle, this projec
 
 ## Dataset Description
 
-The dataset contains company-level and country-level information related to artificial intelligence adoption and workforce impact.
+The dataset contains company, industry, and country-level information related to AI adoption and workforce impact.
 
 Key areas covered include:
 
@@ -33,38 +40,37 @@ Key areas covered include:
 - Company characteristics
 - Country digital maturity indicators
 
-The dataset consists of multiple related tables, allowing relational analysis using SQL joins and queries.
 
-## Project Objectives
+## Questions Explored
 
-This analysis will investigate questions such as:
+This analysis will investigate questions relevant to AI adoption and digital tranformation:
 
-1. Which industries and countries demonstrate higher AI adoption?
-2. How does AI adoption relate to productivity improvements?
-3. Is increased automation associated with workforce changes?
-4. Do higher AI investment levels correspond with stronger business outcomes?
-5. How do governance practices relate to AI adoption success?
+1. Which industries and countries have higher levels of AI adoption?
+2. What factors are associated with successful AI implementation?
+3. Does greater AI adoption correspond with measurable productivity gains?
+4. Are workforce impacts (changes) primarily displacement, creation, or transformation?
+5. What role do governance and risk management practices play in AI outcomes?
 
 ## Tools and Technologies
 
 - Python
 - Pandas
-- SQLite
-- SQL
 - Matplotlib
 - Seaborn
+- Plotly
 - Jupyter Notebook
 - Git/GitHub
+- SQL/SQLite????????????
 
 ## Analysis Plan
 
 ### Data Preparation 
-<sub> [Data Prep Notebook](Notebooks/Cleaning.ipynb) <sub>
+<sub>[Data Prep Notebook](Notebooks/Cleaning.ipynb)</sub>
 - Import CSV data
 - Review table relationships
-- Identify missing values
+- Evaluate missing values
 - Validate data types
-- Prepare SQL database
+
 
 ### Exploratory Data Analysis
 - Summary statistics
@@ -72,14 +78,16 @@ This analysis will investigate questions such as:
 - Country-level comparisons
 - AI adoption distributions
 - Workforce impact analysis
+- Correlation analysis between AI factors and outcomes
 
-### Visualization Goals
+### Visualization (Goals)
 Planned charts include:
 
+- AI adoption by Country
 - AI adoption by industry
-- AI investment versus productivity improvement
-- Automation rate versus workforce change
+- AI investment vs productivity improvement
+- Automation rate vs workforce change
 - Distribution of AI maturity levels
 - Country comparisons of digital transformation indicators
 
-## Repository Structure
+
