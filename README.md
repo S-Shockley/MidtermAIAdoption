@@ -1,5 +1,8 @@
 # Global AI Adoption & Workforce Impact Analysis
 
+<p align="center">
+  <img src="images/AIbanner.webp" width="900">
+</p>
 ![AI Adoption Banner](images/AIbanner.webp)
 
 ## Project Overview
