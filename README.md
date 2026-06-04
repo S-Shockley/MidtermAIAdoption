@@ -58,7 +58,8 @@ This analysis will investigate questions such as:
 
 ## Analysis Plan
 
-### Data Preparation
+### Data Preparation 
+<sub> [Data Prep Notebook](Notebooks/Cleaning.ipynb) <sub>
 - Import CSV data
 - Review table relationships
 - Identify missing values
