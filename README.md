@@ -1,9 +1,10 @@
 # Global AI Adoption & Workforce Impact Analysis
 
+
 <p align="center">
   <img src="images/AIbanner.webp" width="900">
 </p>
-![AI Adoption Banner](Images/AIbanner.webp)
+
 
 ## Project Overview
 
@@ -49,10 +50,10 @@ Key areas covered include:
 
 This analysis will investigate questions relevant to AI adoption and digital tranformation:
 
-1. Which industries and countries have higher levels of AI adoption?
+1. Which industries and countries have higher levels of AI adoption? [Global AI adoption](https://s-shockley.github.io/MidtermAIAdoption/Images/global_ai_adoption_map.html)
 2. What factors are associated with successful AI implementation?
 3. Does greater AI adoption correspond with measurable productivity gains?
-4. Are workforce impacts (changes) primarily displacement, creation, or transformation?
+4. Are workforce impacts (changes) primarily displacement, creation, or transformation? [Findings](#workforce-transformation-analysis)
 5. What role do governance and risk management practices play in AI outcomes?
 
 ## Tools and Technologies
@@ -93,5 +94,27 @@ Planned charts include:
 - Automation rate vs workforce change
 - Distribution of AI maturity levels
 - Country comparisons of digital transformation indicators
+
+## Findings
+
+### Workforce Transformation Analysis
+
+Initial correlation analysis identified a strong relationship between AI-related workforce variables. Jobs created, jobs displaced, and employees reskilled all showed correlations above 0.88, indicating that these workforce changes frequently occurred together within the dataset.
+
+At first glance, this suggested that AI adoption may be associated with workforce transformation rather than only workforce reduction. Companies reporting higher job displacement also tended to report higher job creation and employee reskilling.
+
+Further analysis showed that company size was an important factor. Larger organizations naturally experienced greater workforce movement because they had larger employee populations. To account for this, workforce changes were normalized as a percentage of total employees.
+
+After adjusting for company size, reskilling remained the largest workforce impact category across Enterprise, SME, and Startup organizations. Job creation and displacement occurred at similar rates, resulting in minimal net workforce change across company sizes.
+
+These findings suggest that within this dataset, AI adoption is associated more strongly with workforce restructuring and employee transition than broad workforce reduction. Organizations adopting AI appear to be changing the type of work being performed rather than simply reducing workforce size.
+
+![AI Workforce Transformation](Images/DuoSizeComparison_Normalized.png)
+<p align="center">
+<b>Figure:</b> AI workforce changes before and after normalizing by company size.
+</p>
+
+
+
 
 
