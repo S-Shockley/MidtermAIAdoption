@@ -30,7 +30,8 @@ This dataset does not represent my workplace, but many of the themes reflect com
 
 ## Dataset Description
 
-The dataset contains company, industry, and country-level information related to AI adoption and workforce impact.
+The dataset contains company, industry, and country-level information related to AI adoption and workforce impact. The data is a synthetic dataset modeled after real-world enterprise analytic datasets.   
+Dataset Source: [Global AI Adoption & Workforce Impact Dataset - Kaggle](https://www.kaggle.com/datasets/mohankrishnathalla/global-ai-adoption-and-workforce-impact-dataset)
 
 Key areas covered include:
 
