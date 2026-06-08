@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="images/AIbannerpng.png" width="900">
+  <img src="Images/AIbannerpng.png" width="900">
 </p>
 
 
