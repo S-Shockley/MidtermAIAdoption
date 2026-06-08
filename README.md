@@ -2,11 +2,11 @@
 
 
 <p align="center">
-  <img src="images/AIbanner.webp" width="900">
+  <img src="images/AIbannerpng.png" width="900">
 </p>
 
 
-## Project Overview
+## Project Overview <a id="top"></a>
 
 Organizations are rapidly adopting Artificial Intelligence (AI), but adoption alone does not show whether AI is creating meaningful improvements. Organizations also need to understand how AI maturity relates to business outcomes, workforce changes, and the challenges involved with integrating new technology.
 
@@ -24,10 +24,10 @@ This dataset does not represent my workplace, but many of the themes reflect com
 1. [Dataset Description](#dataset-description)
 2. [Questions Explored](#questions-explored)
 3. [Tools and Technologies](#tools-and-technologies)
-4. [Analysis Plan](#analysis-plan)
+4. [Analytical Approach](#analytical-approach)
 5. [Data Preparation](#data-preparation)
 6. [Exploratory Data Analysis](#exploratory-data-analysis)
-7. [Visualization Goal](#visualization-goals)
+7. [Findings](#findings)
 
 
 
@@ -82,12 +82,19 @@ This analysis is focused on questions related to AI adoption and digital transfo
 
 
 ### Exploratory Data Analysis
-- Summary statistics
-- Industry comparisons
-- Country-level comparisons
-- AI maturity evaluation
+- Summary statistics  
+<sub>[Landscape Notebook](Notebooks/Landscape.ipynb)</sub>
+- Industry comparisons 
+- Country-level comparisons  
+<sub>[Business Value Notebook](Notebooks/AIBusinessValue.ipynb)</sub> 
+- AI maturity evaluation  
+<sub>[Workforce Impact Notebook](Notebooks/WorkForceRestructure.ipynb)</sub>
 - Workforce impact analysis
 - Correlation analysis between AI factors and outcomes
+
+<p align="right">
+  <a href="#top">⬆ Back to Top</a>
+</p>
 
 # Findings
 
@@ -124,10 +131,13 @@ Cost reduction
 >
 > Correlation identifies relationships between variables but does not prove that one variable causes another.
 
-<img src="Images/MaturityandBusiness.png" width="600">  
+<img src="Images/MaturityandBusiness.png" width="650">  <img src="Images/MaturityInvestment.png" width="600">
 
-However, this relationship does not prove that AI maturity alone caused improved outcomes. Other factors, such as company size, available resources, or existing technical capabilities, may influence both AI adoption maturity and business performance.  
-<img src="Images/MaturityInvestment.png" width="600">
+However, this relationship does not prove that AI maturity alone caused improved outcomes. Other factors (scatter plot), such as company size, available resources, or existing technical capabilities, may influence both AI adoption maturity and business performance.  
+<p align="right">
+  <a href="#top">⬆ Back to Top</a>
+</p>
+
 
 ### 3. Workforce Transformation Analysis
 
@@ -153,11 +163,11 @@ Job creation and displacement occurred at similar rates
 Net workforce change remained relatively balanced across company sizes
 
 These findings suggest that within this dataset, AI adoption was associated more strongly with workforce restructuring and employee transition than broad workforce reduction.
-
-
-<p align="center">
-<b>Figure:</b> AI workforce changes before and after normalizing by company size.
+<p align="right">
+  <a href="#top">⬆ Back to Top</a>
 </p>
+
+
 
 
 
