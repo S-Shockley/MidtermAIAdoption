@@ -8,9 +8,11 @@
 
 ## Project Overview
 
-Organizations are rapidly adopting Artificial Intelligence (AI) tools, but successful implementation requires understanding more than adoption. Organizations must consider productivity improvements, workforce impacts, governance, and many factors that influence successful integration.
+Organizations are rapidly adopting Artificial Intelligence (AI), but adoption alone does not show whether AI is creating meaningful improvements. Organizations also need to understand how AI maturity relates to business outcomes, workforce changes, and the challenges involved with integrating new technology.
 
-Using the Global AI Adoption & Workforce Impact Dataset from Kaggle, this project explores relationships between AI maturity, investment, automation, workforce changes, and organizational outcomes using Python-based data analysis and visualization techniques.
+Using the Global AI Adoption & Workforce Impact Dataset from Kaggle, this project explores relationships between AI maturity, investment, workforce impacts, and organizational outcomes using Python-based data analysis and visualization techniques.
+
+The goal of this project was to identify trends and relationships within the data. Since this is an exploratory analysis, findings show associations rather than direct cause-and-effect relationships.
 
 ## Motivation
 
@@ -45,71 +47,114 @@ Key areas covered include:
 - Company characteristics
 - Country digital maturity indicators
 
+Data Considerations:
+
+Because the dataset is synthetic, the results should be interpreted as an analytical exercise rather than conclusions about actual companies. The analysis focuses on identifying patterns, exploring relationships, and practicing data-driven evaluation methods.
+
 
 ## Questions Explored
 
-This analysis will investigate questions relevant to AI adoption and digital tranformation:
+This analysis is focused on questions related to AI adoption and digital transformation:
 
-1. Which industries and countries have higher levels of AI adoption? [Global AI adoption](https://s-shockley.github.io/MidtermAIAdoption/Images/global_ai_adoption_map.html)
-2. What factors are associated with successful AI implementation?
-3. Does greater AI adoption correspond with measurable productivity gains?
-4. Are workforce impacts (changes) primarily displacement, creation, or transformation? [Findings](#workforce-transformation-analysis)
-5. What role do governance and risk management practices play in AI outcomes?
+1. How does AI adoption vary across industries and regions? [Global AI adoption](https://s-shockley.github.io/MidtermAIAdoption/Images/global_ai_adoption_map.html)
+2. Are higher levels of AI maturity associated with stronger organizational outcomes?
+3. How does AI adoption impact workforce composition? [Findings](#workforce-transformation-analysis)
+4. Are workforce changes primarily related to displacement, creation, or transformation?
 
 ## Tools and Technologies
 
 - Python
 - Pandas
 - Matplotlib
-- Seaborn
 - Plotly
 - Jupyter Notebook
 - Git/GitHub
-- SQL/SQLite????????????
 
-## Analysis Plan
+## Analytical Approach
 
 ### Data Preparation 
 <sub>[Data Prep Notebook](Notebooks/Cleaning.ipynb)</sub>
 - Import CSV data
-- Review table relationships
-- Evaluate missing values
-- Validate data types
+- Reviewed table relationships
+- Evaluated missing values
+- Validated data types
+-Prepared data for analysis and visualization
 
 
 ### Exploratory Data Analysis
 - Summary statistics
 - Industry comparisons
 - Country-level comparisons
-- AI adoption distributions
+- AI maturity evaluation
 - Workforce impact analysis
 - Correlation analysis between AI factors and outcomes
 
-### Visualization (Goals)
-Planned charts include:
+# Findings
 
-- AI adoption by Country
-- AI adoption by industry
-- AI investment vs productivity improvement
-- Automation rate vs workforce change
-- Distribution of AI maturity levels
-- Country comparisons of digital transformation indicators
+### 1. AI Adoption Landscape
 
-## Findings
+The first step was understanding where AI adoption was occurring before evaluating outcomes.
 
-### Workforce Transformation Analysis
+AI adoption showed a broad global footprint with differences across industries and regions. Technology and Finance had the highest average adoption rates, while other industries showed varying levels of implementation.
 
-Initial correlation analysis identified a strong relationship between AI-related workforce variables. Jobs created, jobs displaced, and employees reskilled all showed correlations above 0.88, indicating that these workforce changes frequently occurred together within the dataset.
+This provided context for later analysis by showing that AI adoption is not occurring equally across all sectors.  
+[Global AI adoption](https://s-shockley.github.io/MidtermAIAdoption/Images/global_ai_adoption_map.html)  
+  
+<img src="Images/AIAdoptionAcrossIndustries.png" width="600">
+
+### 2. AI Maturity and Business Outcomes
+The next analysis explored whether higher levels of AI maturity were associated with measurable improvements in organizational performance.
+
+Companies with higher AI maturity showed stronger outcomes across:
+
+Productivity improvement
+Revenue growth
+Cost reduction
+
+**Correlation analysis** showed a strong positive relationship between AI maturity and productivity improvement.
+
+
+
+> **Statistics Note:**  
+> Correlation analysis was used to measure the strength and direction of relationships between variables.  
+>
+> **Correlation coefficient (r):** Values range from -1 to +1 and indicate how strongly two variables move together. Values closer to +1 represent a stronger positive relationship.  
+>
+> **P-value (p):** Measures whether the observed relationship is statistically significant. In this analysis, p-values below 0.05 were considered statistically significant.  
+>
+> Correlation identifies relationships between variables but does not prove that one variable causes another.
+
+<img src="Images/MaturityandBusiness.png" width="600">  
+
+However, this relationship does not prove that AI maturity alone caused improved outcomes. Other factors, such as company size, available resources, or existing technical capabilities, may influence both AI adoption maturity and business performance.  
+<img src="Images/MaturityInvestment.png" width="600">
+
+### 3. Workforce Transformation Analysis
+
+Initial correlation analysis identified a strong relationship between AI-related workforce variables. Jobs created, jobs displaced, and employees reskilled all showed strong positive relationships, meaning these workforce changes frequently occurred together within the dataset.  
+<img src="Images/workforceCorr.png" width="400">  
+  
+<img src="Images/WorkforceChangeNormalize.png" width="1200">  
+<p align="center">
+<b>Figure:</b> AI workforce changes before and after normalizing by company size.
+</p>
+
 
 At first glance, this suggested that AI adoption may be associated with workforce transformation rather than only workforce reduction. Companies reporting higher job displacement also tended to report higher job creation and employee reskilling.
 
-Further analysis showed that company size was an important factor. Larger organizations naturally experienced greater workforce movement because they had larger employee populations. To account for this, workforce changes were normalized as a percentage of total employees.
+Further analysis showed that company size was an important factor. Larger organizations naturally experienced greater workforce movement because they had larger employee populations.
 
-After adjusting for company size, reskilling remained the largest workforce impact category across Enterprise, SME, and Startup organizations. Job creation and displacement occurred at similar rates, resulting in minimal net workforce change across company sizes.
+To account for this, workforce changes were normalized as a percentage of total employees.
 
-These findings suggest that within this dataset, AI adoption is associated more strongly with workforce restructuring and employee transition than broad workforce reduction. Organizations adopting AI appear to be changing the type of work being performed rather than simply reducing workforce size.
+After adjusting for company size:
 
-![AI Workforce Transformation](Images/DuoSizeComparison_Normalized.png)
+Reskilling remained the largest workforce impact category across Enterprise, SME, and Startup organizations
+Job creation and displacement occurred at similar rates
+Net workforce change remained relatively balanced across company sizes
+
+These findings suggest that within this dataset, AI adoption was associated more strongly with workforce restructuring and employee transition than broad workforce reduction.
+
+
 <p align="center">
 <b>Figure:</b> AI workforce changes before and after normalizing by company size.
 </p>
