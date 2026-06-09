@@ -1,8 +1,11 @@
-# Global AI Adoption & Workforce Impact Analysis
+<h1 align="center"> Global AI Adoption & Workforce Impact Analysis</h1>
+<p align="center">
+  An analysis of AI maturity, business outcomes, and workforce transformation
+</p>
 
 
 <p align="center">
-  <img src="Images/AIbannerpng.png" width="900">
+  <img src="Images/AIbannerpng.png" width="600">
 </p>
 
 
@@ -28,6 +31,7 @@ This dataset does not represent my workplace, but many of the themes reflect com
 5. [Data Preparation](#data-preparation)
 6. [Exploratory Data Analysis](#exploratory-data-analysis)
 7. [Findings](#findings)
+8. [Future Research](#future-research)
 
 
 
@@ -56,10 +60,10 @@ Because the dataset is synthetic, the results should be interpreted as an analyt
 
 This analysis is focused on questions related to AI adoption and digital transformation:
 
-1. How does AI adoption vary across industries and regions? [Global AI adoption](https://s-shockley.github.io/MidtermAIAdoption/Images/global_ai_adoption_map.html)
-2. Are higher levels of AI maturity associated with stronger organizational outcomes?
-3. How does AI adoption impact workforce composition? [Findings](#workforce-transformation-analysis)
-4. Are workforce changes primarily related to displacement, creation, or transformation?
+1. How does AI adoption vary across industries and regions? [Findings](#1-ai-adoption-landscape) plotly: [Global AI adoption](https://s-shockley.github.io/MidtermAIAdoption/Images/global_ai_adoption_map.html) 
+2. Are higher levels of AI maturity associated with stronger organizational outcomes? [Findings](#2-ai-maturiy-and-business-outcomes)
+3. How does AI adoption impact workforce composition? [Findings](#3-workforce-transformation-analysis)
+4. Are workforce changes primarily related to displacement, creation, or transformation? [Findings](#3-workforce-transformation-analysis)
 
 ## Tools and Technologies
 
@@ -167,6 +171,9 @@ These findings suggest that within this dataset, AI adoption was associated more
   <a href="#top">⬆ Back to Top</a>
 </p>
 
+## Future Research
+
+Add analysis on what other factors are impacting results and how companies can take advantage!
 
 
 
