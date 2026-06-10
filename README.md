@@ -71,28 +71,34 @@ This analysis is focused on questions related to AI adoption and digital transfo
 - Pandas
 - Matplotlib
 - Plotly
+- Seaborn
 - Jupyter Notebook
 - Git/GitHub
 
 ## Analytical Approach
 
-### Data Preparation 
-<sub>[Data Prep Notebook](Notebooks/Cleaning.ipynb)</sub>
+#### [Data Preparation](Notebooks/01_Cleaning.ipynb)
 - Import CSV data
 - Reviewed table relationships
 - Evaluated missing values
 - Validated data types
--Prepared data for analysis and visualization
+- Prepared data for analysis and visualization
 
+#### [Exploratory Data Analysis](Notebooks/02_InitialExploration.ipynb)
+- Generated summary statistics  
+- Evaluated feature distribution
+- Idenitifeid relationships
 
-### Exploratory Data Analysis
-- Summary statistics  
-<sub>[Landscape Notebook](Notebooks/Landscape.ipynb)</sub>
-- Industry comparisons 
-- Country-level comparisons  
-<sub>[Business Value Notebook](Notebooks/AIBusinessValue.ipynb)</sub> 
-- AI maturity evaluation  
-<sub>[Workforce Impact Notebook](Notebooks/WorkForceRestructure.ipynb)</sub>
+#### [AI Adoption Landscape Analysis](Notebooks/03_Landscape.ipynb)
+- Compared AI adoption rates across industries 
+- Country-level adoption patterns 
+
+#### [AI Maturity and Business Outcomes](Notebooks/04_AIBusinessValue.ipynb)
+- Compared organizational outcomes across AI maturity stages
+- Evaluated productivity, revenue growth, and cost reduction trends
+- Tested relationships between AI maturity and performance metrics 
+
+#### [Workforce Transformation Analysis](Notebooks/05_WorkForceRestructure.ipynb)
 - Workforce impact analysis
 - Correlation analysis between AI factors and outcomes
 
@@ -100,7 +106,7 @@ This analysis is focused on questions related to AI adoption and digital transfo
   <a href="#top">⬆ Back to Top</a>
 </p>
 
-# Findings
+## Findings
 
 ### 1. AI Adoption Landscape
 
@@ -142,7 +148,6 @@ However, this relationship does not prove that AI maturity alone caused improved
   <a href="#top">⬆ Back to Top</a>
 </p>
 
-
 ### 3. Workforce Transformation Analysis
 
 Initial correlation analysis identified a strong relationship between AI-related workforce variables. Jobs created, jobs displaced, and employees reskilled all showed strong positive relationships, meaning these workforce changes frequently occurred together within the dataset.  
@@ -152,7 +157,6 @@ Initial correlation analysis identified a strong relationship between AI-related
 <p align="center">
 <b>Figure:</b> AI workforce changes before and after normalizing by company size.
 </p>
-
 
 At first glance, this suggested that AI adoption may be associated with workforce transformation rather than only workforce reduction. Companies reporting higher job displacement also tended to report higher job creation and employee reskilling.
 
