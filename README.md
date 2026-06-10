@@ -177,7 +177,14 @@ These findings suggest that within this dataset, AI adoption was associated more
 
 ## Future Research
 
-Add analysis on what other factors are impacting results and how companies can take advantage!
+This analysis identified relationships between AI adoption, business outcomes, and workforce transformation. Additional research could explore the factors that drive successful AI implementation.
+
+Potential areas for future analysis include:
+
+- Evaluating which organizational factors contribute most to AI success, including investment levels, industry characteristics, and company size
+- Analyzing longer-term trends to determine how AI maturity impacts organizations over time
+- Exploring which workforce strategies lead to stronger outcomes during AI-driven transformation
+- Expanding predictive modeling to estimate which organizations are most likely to benefit from increased AI adoption
 
 
 
